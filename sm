@@ -12,5 +12,5 @@ msg "Remove rm"
         ra
     fi
 fi
-cd ~/Termux-Ultroid/*
+cd ~/my*
 bash startup
