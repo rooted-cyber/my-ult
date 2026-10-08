@@ -11,7 +11,8 @@ import sys
 import time
 from logging import Logger
 
-from telethonpatch import TelegramClientfrom telethon import utils as telethon_utils
+from telethonpatch import TelegramClient
+from telethon import utils as telethon_utils
 from telethon.errors import (
     AccessTokenExpiredError,
     AccessTokenInvalidError,
