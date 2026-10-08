@@ -200,7 +200,7 @@ heroku_api = Var.HEROKU_API
 
 
 @ultroid_cmd(
-    pattern="restart$",
+    pattern="rs$",
     fullsudo=True,
 )
 async def restartbt(ult):
