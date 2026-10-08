@@ -81,5 +81,5 @@ done
 }
 for c in pillow coloredlogs gitpython bs4 pytz enhancer telegraph aiohttp requests; do
   msg "➤ Installing $c"
-  chh "$c"
+  pp i "$c"
 done
