@@ -1,4 +1,4 @@
-# Ultroid - UserBot
+ # Ultroid - UserBot
 # Copyright (C) 2021-2026 TeamUltroid
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
@@ -328,7 +328,7 @@ async def aexec(code, event):
         'message': event,
         'event': event,
         'client': event.client,
-        'reply': await event.get_reply_message(),
+        'r': await event.get_reply_message(),
         'chat': event.chat_id,
         'u': u,
         '__builtins__': __builtins__,
