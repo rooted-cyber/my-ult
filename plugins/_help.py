@@ -1,5 +1,5 @@
 # Ultroid - UserBot
-# Copyright (C) 2021-2026 TeamUltroid
+# Copyright (C) 2021-2023 TeamUltroid
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
@@ -23,11 +23,11 @@ _main_help_menu = [
         Button.inline(get_string("help_5"), data="uh_Addons_"),
     ],
     [
-        Button.inline(get_string("help_6"), data="uh_VCBot_"),
-        Button.inline(get_string("help_7"), data="inlone"),
+        #Button.inline(get_string("help_6"), data="uh_VCBot_"),
+        #Button.inline(get_string("help_7"), data="inlone"),
     ],
     [
-        Button.inline(get_string("help_8"), data="ownr"),
+        #Button.inline(get_string("help_8"), data="ownr"),
         Button.url(
             get_string("help_9"), url=f"https://t.me/{asst.me.username}?start=set"
         ),
@@ -36,8 +36,9 @@ _main_help_menu = [
 ]
 
 
-@ultroid_cmd(pattern="h m (.*)|$)")
+@ultroid_cmd(pattern="h( (.*)|$)")
 async def _help(ult):
+    mythumb = "resources/downloads/a.jpg"
     plug = ult.pattern_match.group(1).strip()
     chat = await ult.get_chat()
     if plug:
@@ -46,19 +47,19 @@ async def _help(ult):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n© @TeamUltroid"
+                output += "\n© [@TeamUltroid](https://t.me/+n8u2GAyzcg00NmFl)"
                 await ult.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Addons"][plug]:
                     output += i
-                output += "\n© @TeamUltroid"
+                output += "\n© [@TeamUltroid](https://t.me/+n8u2GAyzcg00NmFl)"
                 await ult.eor(output)
             elif HELP.get("VCBot") and plug in HELP["VCBot"]:
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["VCBot"][plug]:
                     output += i
-                output += "\n© @TeamUltroid"
+                output += "\n© [@TeamUltroid](https://t.me/+n8u2GAyzcg00NmFl)"
                 await ult.eor(output)
             else:
                 try:
@@ -66,7 +67,7 @@ async def _help(ult):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n© @TeamUltroid"
+                    x += "\n© [@TeamUltroid](https://t.me/+n8u2GAyzcg00NmFl)"
                     await ult.eor(x)
                 except BaseException:
                     file = None
@@ -101,7 +102,7 @@ async def _help(ult):
                     elif HELP.get("VCBot") and file in HELP["VCBot"]:
                         for i in HELP["VCBot"][file]:
                             output += i
-                    output += "\n© @TeamUltroid"
+                    output += "\n© [@TeamUltroid](https://t.me/+n8u2GAyzcg00NmFl)"
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
@@ -123,7 +124,7 @@ async def _help(ult):
                     len(HELP["Addons"] if "Addons" in HELP else []),
                     cmd,
                 ),
-                file=inline_pic(),
+                file=mythumb,
                 buttons=_main_help_menu,
             )
         except BotResponseTimeoutError:
