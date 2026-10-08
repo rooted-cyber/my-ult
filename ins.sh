@@ -1,9 +1,10 @@
 cd ~/my*
 cp ch sm $PREFIX/bin
+chmod 777 ch sm
 if command -v pip3;then
 pip3 install -r requirements.txt --no-cache-dir
 else
-pp i -r ~/Ult*/req*  --no-cache-dir --force-reinstall
+pp i -r ~/my*/req*  --no-cache-dir --force-reinstall
 fi
 chh() {
 #!/bin/bash
