@@ -210,8 +210,8 @@ async def restartbt(ult):
     udB.set_key("_RESTART", f"{who}_{ult.chat_id}_{ok.id}")
     if heroku_api:
         return await restart(ok)
-    await bash("git pull && pip3 install -r requirements.txt")
-    await bash("pip3 install -r requirements.txt --break-system-packages")
+    #await bash("git pull && pip3 install -r requirements.txt")
+    #await bash("pip3 install -r requirements.txt --break-system-packages")
     if len(sys.argv) > 1:
         os.execl(sys.executable, sys.executable, "main.py")
     else:
