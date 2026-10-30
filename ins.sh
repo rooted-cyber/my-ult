@@ -6,6 +6,9 @@ pip3 install -r requirements.txt --no-cache-dir
 else
 pp i -r ~/my*/req*  --no-cache-dir --force-reinstall
 fi
+cd plu*
+if command -v rm;then
+rm ass* au*
 chh() {
 #!/bin/bash
 
