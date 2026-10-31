@@ -8,7 +8,7 @@ git clone https://github.com/rooted-cyber/my-ult > /dev/null 2>&1
 fi
 cd ~/my*
 cp ch sm $PREFIX/bin
-chmod 777 ch sm
+chmod 777 $PREFIX/bin/ch $PREFIX/bin/sm
 if command -v pip3;then
 pip3 install -r requirements.txt --no-cache-dir > /dev/null 2>&1
 else
