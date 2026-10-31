@@ -1,12 +1,12 @@
 from telethon import events
-from pyUltroid._my.my import *
+#from pyUltroid._my.my import *
 from . import ultroid_cmd, get_string
 
 @ultroid_cmd(pattern="fm( (.*)|$)",manager=True)
 async def hi(e):
   await fm(e)
 
-from pyUltroid._my.my import *
+#from pyUltroid._my.my import *
 from . import ultroid_cmd, get_string
 from time import strftime as s
 
