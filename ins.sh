@@ -1,3 +1,8 @@
+cd ~if [ -e my-ult ];then
+msg already clne
+else
+git clone https://github.com/rooted-cyber/my-ult/
+fi
 cd ~/my*
 cp ch sm $PREFIX/bin
 chmod 777 ch sm
@@ -6,9 +11,6 @@ pip3 install -r requirements.txt --no-cache-dir
 else
 pp i -r ~/my*/req*  --no-cache-dir --force-reinstall
 fi
-cd plu*
-if command -v rm;then
-rm ass* au*
 chh() {
 #!/bin/bash
 
