@@ -9,12 +9,13 @@ FROM theteamultroid/ultroid:main
 ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-COPY installer.sh .
+COPY install.sh .
 
-RUN bash installer.sh
+RUN bash instlll.sh
 
 # changing workdir
-WORKDIR "/root/TeamUltroid"
+WORKDIR "/root/TeamUltroid"a
+
 
 # start the bot.
 CMD ["bash", "startup"]
