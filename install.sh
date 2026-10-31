@@ -70,7 +70,7 @@ for item in "$@"; do
   # 4. Try installing as pip package
   echo "➤ Trying pip install: $item"
 
-  pip install "$item" >/tmp/pip_log 2>&1 &
+  pp i "$item"
   pid=$!
 
   while kill -0 $pid 2>/dev/null; do
