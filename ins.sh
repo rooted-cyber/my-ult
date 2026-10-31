@@ -1,4 +1,5 @@
-cd ~if [ -e my-ult ];then
+cd ~
+if [ -e my-ult ];then
 msg already clne
 else
 git clone https://github.com/rooted-cyber/my-ult/
