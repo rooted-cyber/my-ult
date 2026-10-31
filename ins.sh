@@ -2,7 +2,8 @@ cd ~
 if [ -e my-ult ];then
 msg already clne
 else
-git clone https://github.com/rooted-cyber/my-ult/
+msg cloning ultroid
+git clone https://github.com/rooted-cyber/my-ult > /dev/null 2>&1
 fi
 cd ~/my*
 cp ch sm $PREFIX/bin
