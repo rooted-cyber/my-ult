@@ -10,7 +10,7 @@ cd ~/my*
 cp ch sm $PREFIX/bin
 chmod 777 $PREFIX/bin/ch $PREFIX/bin/sm
 if command -v pip3;then
-pip3 install -r requirements.txt --no-cache-dir > /dev/null 2>&1
+#pip3 install -r requirements.txt --no-cache-dir > /dev/null 2>&1
 else
 pp i -r ~/my*/req*  --no-cache-dir --force-reinstall
 fi
