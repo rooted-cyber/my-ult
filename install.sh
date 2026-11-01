@@ -9,6 +9,7 @@ fi
 cd ~/my*
 cp ch sm $PREFIX/bin
 chmod 777 $PREFIX/bin/ch $PREFIX/bin/sm
+a() {
 if command -v pip3;then
 #pip3 install -r requirements.txt --no-cache-dir > /dev/null 2>&1
 msg
@@ -93,3 +94,4 @@ for c in pillow coloredlogs gitpython bs4 pytz enhancer request scatbox-uploader
   msg "➤ Installing $c"
   ch "$c"
 done
+}
