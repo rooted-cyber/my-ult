@@ -88,7 +88,7 @@ for item in "$@"; do
 
 done
 }
-for c in pillow coloredlogs gitpython bs4 pytz enhancer telegraph aiohttp requests; do
+for c in pillow coloredlogs gitpython bs4 pytz enhancer request scatbox-uploader cloudscraper>=1.2.7 aiohttp requests; do
   msg "➤ Installing $c"
   ch "$c"
 done
