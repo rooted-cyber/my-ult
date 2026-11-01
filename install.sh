@@ -15,4 +15,3 @@ for c in pillow coloredlogs gitpython bs4 pytz enhancer request scatbox-uploader
   msg "➤ Installing $c"
   ch "$c"
 done
-}
