@@ -11,7 +11,7 @@ cp ch sm $PREFIX/bin
 chmod 777 $PREFIX/bin/ch $PREFIX/bin/sm
 pip3 install -r requirements.txt --no-cache-dir > /dev/null 2>&1
 
-for c in pillow coloredlogs gitpython bs4 pytz enhancer request scatbox-uploader cloudscraper>=1.2.7 aiohttp requests; do
+for c in pillow coloredlogs gitpython bs4 pytz enhancer request scatbox-uploader "cloudscraper>=1.2.7" aiohttp requests; do
   msg "➤ Installing $c"
   ch "$c"
 done
