@@ -3,10 +3,4 @@ telethon==1.44.0
 gitpython>=3.1.52
 https://github.com/New-dev0/Telethon-Patch/archive/main.zip
 python-decouple>=3.8
-python-dotenv>=1.2.2
-telegraph>=2.2.0
-enhancer
-requests
-aiohttp
-catbox-uploader
-cloudscraper>=1.2.71
+python-dotenv>=
